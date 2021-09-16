@@ -1,0 +1,147 @@
+
+body{
+  font-family: "urw-din", sans-serif;
+  height: 100vh;
+  background: rgb(0,0,0);
+  
+}
+p{
+  color: #ccc;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.row{
+  margin: 0;
+  padding: 0;
+}
+#album{
+  display: flex;
+  align-items: center;
+  background: rgb(0,0,0);
+  
+}
+#under{
+  background-image: url(../images/mati.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff;
+  height: 100vh!important;
+  margin: 0!important;
+}
+#contenedor{
+  position: absolute;
+  bottom: 23px;
+}
+.player{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 4px;
+  margin: auto;
+  text-align: center;
+}
+.icono{
+  height: 20px;
+  width: 24px;
+}
+.btn-rrss:hover g{
+  fill: #222;
+}
+.btn-rrss{
+  border-radius: 16px;
+  padding:6px 0;
+  width: 145px;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 6px;
+  color: #ccc;
+  border: 2px solid #ccc;
+}
+.btn-play{
+  border-radius: 16px;
+  padding:6px 0;
+  width: 100px;
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-bottom: 4px;
+  color: #ccc;
+  border: 2px solid #ccc;
+}
+.display-5{
+  letter-spacing:-1px;
+  color:#ccc;
+  margin-top:2rem;
+}
+.mobile{
+  display: none;
+}
+@media screen and (max-width:1360px){
+  .display-4{
+    font-size: 3rem;
+  }
+  .btn-rrss,
+  .btn-play{
+    padding: 4px 0;
+  }
+}
+@media screen and (min-width:1600px){
+  #under{
+    background-image: url(../images/mati-FHD.jpg);
+  }
+}
+@media screen and (min-width:1280px){
+  #under iframe{
+    bottom: -90px!important;
+  }
+}
+@media screen and (max-width:1280px){
+  .display-4{
+    margin-top: .5rem!important;
+    margin-bottom: .5rem!important;
+  }
+  .display-5{
+    margin-top: 15px!important;
+    font-size: 1.5rem;
+  }
+  .btn-rrss{
+    padding: 3px 0;
+    font-size: .8rem;
+    width: 140px;
+  }
+  .btn-play{
+    padding: 3px 0;
+    font-size: .8rem;
+    width: 80px;
+  }
+}
+@media screen and (max-width:800px){
+  body{
+    height: auto;
+  }
+  .display-4{
+    font-size:2rem;
+    letter-spacing: normal;
+  }
+  .cuadro{
+    height: 35vh;
+    width: 60vw;
+    position: absolute;
+    top: 45vh;
+    left: 20vw;
+  }
+  .player,
+  #img-album,
+  #under{
+    display:none!important;
+  }
+  #album{
+    padding: 0!important;
+    display: block!important;
+  }
+  .mobile{
+    display: block;
+  }
+}
